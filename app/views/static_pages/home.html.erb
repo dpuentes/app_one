@@ -1,4 +1,9 @@
-<h1>StaticPages#home</h1>
+<h1>  <%= Time.now.strftime("%H:%M") %>
+      <%= I18n.l(Date.today, format: '%A, %d de %B de %Y') %>
+</h1>
+
+
+<br>
 <nav>
   <ul class="nav navbar-nav navbar-right">
     <%= link_to "basics", basics_path %>
@@ -6,4 +11,5 @@
     <%= link_to "git", git_path %>
   </ul>
 </nav>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+</br>
+<p>Fin de pagina </p>
