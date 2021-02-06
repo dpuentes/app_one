@@ -1,2 +1,31 @@
-<h1>StaticPages#ruby</h1>
-<p>Find me in app/views/static_pages/ruby.html.erb</p>
+<h1> Interpolación de strings.  </h1>
+<p>  Para este ejemplo abrimos la terminal de ruby y creamos una variable por ejemplo a = “Diego”  creamos otra variable saludo = “Hola soy # {a}”, alli observamos la interpolación de la variable a en la cadena de la variable saludo. Se debe mantener la sintaxis #[variable_a_interpolar] </p>
+
+<h1> Como se declara un array y como se adiciona un elemento al final del array.  </h1>
+<p> La sintaxis para definir un array en ruby es [elemento1, elemento2,]
+este array se puede declarar en una variable y puede contener diferentes tipos de datos.
+Para adicionar un elemento al final del array debe tener en cuenta el orden de los elementos los cuales inician desde el 0 = elemento1  1= elemento2, si quiero agregar el elemento3 al array alojado en la variable pueodo usar  el método push donde  su sintaxis es variable.push(elemeto3), o el operador equivalente a push que es >>  variable >> elemento3. </p>
+
+<h1> Cómo se declara un hash.  </h1>
+<p> Se declaran mediante las llaves {} y su contenido tiene una llave y un valor asociado a esta llave; {key:value} para separar los pares de llaves y valores se usa la coma ,  los hash también se pueden agregar a variables.Se declaran mediante las llaves {} y su contenido tiene una llave y un valor asociado a esta llave; {key:value} para separar los pares de llaves y valores se usa la coma ,  los hash también se pueden agregar a variables.  </p>
+
+<h1> Cómo se itera un hash utilizando el comando each  </h1>
+<p>  El siguiente ejemplo de hash;  variable = {“key” => “value”} se itera de la siguiente forma:
+variable.each do |key, value|, por medio de los bloques.
+ejemplo:
+datos_personales = {“nombre” =>”diego”, “apellido” => “puentes”, “edad”=>26}
+datos_personales.each do |llave, valor|
+	puts “#{llave}: #{valor}”
+end  </p>
+
+
+<h1> ¿Qué es un block en ruby? De un ejemplo de cómo utilizarlo.  </h1>
+<p>  Es la forma en que ruby permite unir arreglos y rangos.
+Ejemplo [1,2,3,4].each do |mumero| puts 2 * numeo end 
+los bloques también se pueden delimitar con las llaves {}
+[1,2,3,4].each { |numero| puts 2 * numero   </p>
+
+
+<h1> ¿Cuál es la convención en Ruby a la hora de nombrar variables? </h1>
+<p>  nombre_de_variable = “valor”
+depende el tipo de valor que contenga la variable llevará ""  </p>
